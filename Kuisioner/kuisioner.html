@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kuisioner Analisa Tubuh</title>
+  <link rel="stylesheet" href="kuisioner.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <img src="logo ruby.png" alt="Logo Ruby" class="logo" />
+    <h1>Kuisioner Analisa Tubuh</h1>
+  </div>
+
+  <!-- Kontainer slide kuisioner -->
+  <div class="main" id="slides-container">
+
+    <!-- Slide Intro -->
+    <div class="slide active" id="slide-0">
+      <img src="logo ruby.png" alt="Logo Ruby" class="logo" style="width: 160px; margin-bottom: -90px;" />
+      <h3 style="text-align:center;">Apakah Kamu Siap Untuk<br />Analisa Tubuhmu?</h3>
+      <button class="btn-start" onclick="nextSlide()">MULAI</button>
+    </div>
+
+
+    <!-- Slides pertanyaan akan dibuat otomatis -->
+  </div>
+
+  <!-- Slide hasil akhir -->
+  <div class="main slide" id="slide-result">
+    <h2>Hasil Analisa Tubuh</h2>
+    <div class="score-box">
+      Skor Kamu : <span id="score-value">0</span> / 75
+    </div>
+    <div id="score-result"></div>
+    <button class="btn-back" onclick="prevSlide()">← Kembali</button>
+  </div>
+
+  <!-- Bottom Navbar -->
+  <div class="bottom-navbar">
+    <a href="#" class="nav-item"><i class="fas fa-calendar-alt nav-icon"></i><span class="nav-text">Kalender</span></a>
+    <a href="#" class="nav-item"><i class="fas fa-bell nav-icon"></i><span class="nav-text">Pengingat</span></a>
+    <a href="#" class="nav-item active"><i class="fas fa-clipboard nav-icon"></i><span class="nav-text">Kuisioner</span></a>
+    <a href="#" class="nav-item"><i class="fas fa-user nav-icon"></i><span class="nav-text">Saya</span></a>
+  </div>
+
+  <!-- Script -->
+  <script src="kuisioner.js"></script>
+</body>
+</html>
